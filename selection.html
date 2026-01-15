@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Path | BrandBuilder</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .selection-container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .selection-header {
+            margin-bottom: 50px;
+        }
+
+        .selection-header h1 {
+            font-size: 2.5rem;
+            color: #1e293b;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 10px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: #2563eb;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            background: #eff6ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #2563eb;
+        }
+
+        .service-card h3 {
+            margin: 10px 0;
+            font-size: 1.3rem;
+            color: #1e293b;
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        .footer-note {
+            margin-top: 50px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Brand<span>Builder</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="admin.html" style="font-size: 0.8rem; opacity: 0.6;">Admin Access</a></li>
+        </ul>
+    </nav>
+
+    <div class="selection-container">
+        <header class="selection-header">
+            <h1>Choose Your Focus Area</h1>
+            <p>Select a service to begin transforming your professional identity.</p>
+        </header>
+
+        <div class="service-grid">
+            <a href="linkedin-steps.html" class="service-card">
+                <div class="icon-circle">🔗</div>
+                <h3>LinkedIn Optimization</h3>
+                <p>Improve headline, summary, and SEO to rank higher in recruiter searches.</p>
+            </a>
+
+            <a href="portfolio-steps.html" class="service-card">
+                <div class="icon-circle">🎨</div>
+                <h3>Digital Portfolio</h3>
+                <p>Build a professional website or Notion-based showcase for your projects.</p>
+            </a>
+
+            <a href="resume-steps.html" class="service-card">
+                <div class="icon-circle">📄</div>
+                <h3>Resume Consistency</h3>
+                <p>Ensure your resume is ATS-friendly and matches your online brand perfectly.</p>
+            </a>
+
+            <a href="strategy-steps.html" class="service-card">
+                <div class="icon-circle">🚀</div>
+                <h3>Brand Strategy</h3>
+                <p>Define your unique career goals and craft your professional story.</p>
+            </a>
+        </div>
+
+        <p class="footer-note">Not sure where to start? We recommend beginning with LinkedIn Mastery.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

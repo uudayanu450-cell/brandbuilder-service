@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Creation | BrandBuilder</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .tab-system {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .tab-btn {
+            padding: 12px 30px;
+            border: 2px solid #2563eb;
+            background: white;
+            color: #2563eb;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn.active {
+            background: #2563eb;
+            color: white;
+        }
+
+        .path-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .path-content.active {
+            display: block;
+        }
+
+        .step-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .portfolio-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            padding: 25px;
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .badge-tech { background: #f1f5f9; color: #475569; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Brand<span>Builder</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="selection.html">Services</a></li>
+        </ul>
+    </nav>
+
+    <div class="portfolio-container">
+        <header style="text-align: center; margin-bottom: 40px;">
+            <h1>Digital Portfolio Showcase</h1>
+            <p>Your resume tells them what you did; your portfolio <strong>shows</strong> them how you did it.</p>
+        </header>
+
+        <div class="tab-system">
+            <button class="tab-btn active" onclick="switchPath('notion')">Notion (Fast & Easy)</button>
+            <button class="tab-btn" onclick="switchPath('github')">GitHub Pages (Developer Focus)</button>
+        </div>
+
+        <div id="notion-path" class="path-content active">
+            <div class="step-grid">
+                <div class="portfolio-card">
+                    <h3>1. Setup Your Canvas</h3>
+                    <p>Create a free account on Notion and search for the <strong>"Personal Home"</strong> or <strong>"Portfolio"</strong> template.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h3>2. Add "Proof of Work"</h3>
+                    <p>Don't just list projects. Add screenshots, links to live demos, and a brief description of the <strong>Problem, Solution, and Result</strong>.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h3>3. Go Public</h3>
+                    <p>Click the "Share" button at the top right, toggle on <strong>"Share to web"</strong>, and copy your link. This link goes on your LinkedIn and Resume!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="github-path" class="path-content">
+            <div class="step-grid">
+                <div class="portfolio-card">
+                    <h3>1. Create Your Repo</h3>
+                    <p>Start a new repository named <code>yourusername.github.io</code>. This tells GitHub to host your files as a website.</p>
+                </div>
+                <div class="portfolio-card">
+                    <h3>2. Choose a Framework/Theme</h3>
+                    <p>You can push a simple <code>index.html</code> or use a Static Site Generator like Jekyll or Hugo for a blog-style portfolio.</p>
+                    <span class="badge-tech">Pro Tip: Use a clean README.md if you aren't ready for a full site yet.</span>
+                </div>
+                <div class="portfolio-card">
+                    <h3>3. Automate Your Brand</h3>
+                    <p>Link your repositories directly to your portfolio so recruiters can see your code commits in real-time.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-buttons" style="display: flex; justify-content: space-between; margin-top: 40px;">
+            <a href="linkedin-steps.html" class="btn-secondary">← Back: LinkedIn</a>
+            <a href="resume-steps.html" class="btn-primary">Next: Resume Strategy →</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function switchPath(path) {
+            // Toggle active content
+            document.querySelectorAll('.path-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(path + '-path').classList.add('active');
+
+            // Toggle active button
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

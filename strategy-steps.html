@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Strategy | BrandBuilder</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .strategy-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .strategy-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .strategy-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .strategy-card h3 {
+            color: #2563eb;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+
+        .story-template {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            font-style: italic;
+            color: #475569;
+            margin-top: 10px;
+            border-left: 4px solid #94a3b8;
+        }
+
+        .badge-goal {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Brand<span>Builder</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="selection.html">Services</a></li>
+        </ul>
+    </nav>
+
+    <div class="strategy-container">
+        <header class="strategy-header">
+            <span class="badge-goal">Final Module</span>
+            <h1>Personal Brand Strategy</h1>
+            <p>Identify your strengths and build a unique professional story.</p>
+        </header>
+
+        <div class="strategy-card">
+            <h3>01. Identify Your Core Strengths</h3>
+            <p>What makes you unique? List three technical skills and two soft skills.</p>
+            <textarea class="input-box" placeholder="e.g., Python, UI Design, Public Speaking..."></textarea>
+        </div>
+
+        <div class="strategy-card">
+            <h3>02. Define Your Career Goals</h3>
+            <p>Are you targeting corporate placements, startups, or freelance work? Your brand voice must match your target audience.</p>
+            <select class="input-box">
+                <option>Select your primary goal</option>
+                <option>MNC/Corporate Placements</option>
+                <option>Fast-Growing Startups</option>
+                <option>Higher Education/Research</option>
+                <option>Freelancing/Entrepreneurship</option>
+            </select>
+        </div>
+
+        <div class="strategy-card">
+            <h3>03. Build Your Professional Story</h3>
+            <p>Create a "Pitch" that connects your past projects to your future ambitions.</p>
+            <div class="story-template">
+                "I am a [Major] student passionate about [Niche]. Having built [Project Name], I developed skills in [Skill], and I am now looking to apply this expertise to [Goal]."
+            </div>
+            <textarea class="input-box" rows="4" placeholder="Draft your story here..."></textarea>
+        </div>
+
+        <div class="strategy-card">
+            <h3>04. Online Presence Strategy</h3>
+            <p>Plan your engagement: What will you post about? Who will you network with?</p>
+            <ul style="color: #64748b; font-size: 0.9rem;">
+                <li>Comment on 3 industry leaders' posts weekly.</li>
+                <li>Share one project update or "learning moment" every 10 days.</li>
+            </ul>
+        </div>
+
+        <div class="nav-buttons" style="display: flex; justify-content: space-between; margin-top: 40px;">
+            <a href="resume-steps.html" class="btn-secondary">← Back: Resume</a>
+            <a href="feedback.html" class="btn-primary">Finish & Give Feedback →</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

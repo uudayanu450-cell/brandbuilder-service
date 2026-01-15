@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Mastery | BrandBuilder</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific enhancements for the LinkedIn Step Page */
+        .instruction-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .step-header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .instruction-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .step-number {
+            background: #2563eb;
+            color: white;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .tip-box {
+            background: #f0f9ff;
+            border-left: 4px solid #0ea5e9;
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #0369a1;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .checklist li::before {
+            content: "✓";
+            color: #22c55e;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Brand<span>Builder</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="selection.html">Services</a></li>
+        </ul>
+    </nav>
+
+    <div class="instruction-container">
+        <header class="step-header">
+            <h1><span class="step-number">1</span> LinkedIn Profile Optimization</h1>
+            <p>Your LinkedIn is your 24/7 digital billboard. Let's make it stand out to recruiters.</p>
+        </header>
+
+        <div class="instruction-card">
+            <h3>📸 Visual First Impressions</h3>
+            <p>Before reading a word, people see your face and your banner.</p>
+            <ul class="checklist">
+                <li><strong>Profile Picture:</strong> High-resolution, professional headshot with a smile.</li>
+                <li><strong>Banner Image:</strong> A custom graphic that represents your field (use Canva templates).</li>
+            </ul>
+        </div>
+
+        <div class="instruction-card">
+            <h3>✍️ The "Recruiter-Ready" Headline</h3>
+            <p>Don't just put "Student." Use keywords for the role you <em>want</em>.</p>
+            <div class="tip-box">
+                <strong>Formula:</strong> [Target Role] | [Core Skills] | [Personal USP] <br>
+                <em>e.g., Aspiring Data Scientist | Python, SQL, Tableau | 1st Place Hackathon Winner</em>
+            </div>
+        </div>
+
+        <div class="instruction-card">
+            <h3>📖 The 'About' Story</h3>
+            <p>Write in the first person ("I"). Mention your passion, your key projects, and what you are looking for next.</p>
+            <ul class="checklist">
+                <li>Paragraph 1: Your background and current focus.</li>
+                <li>Paragraph 2: Your biggest technical achievement.</li>
+                <li>Paragraph 3: Call to action (e.g., "Open to internships in Fintech").</li>
+            </ul>
+        </div>
+
+        <div class="instruction-card">
+            <h3>🛠️ Experience & Skills</h3>
+            <ul class="checklist">
+                <li>Add descriptions to your internships using action verbs (Developed, Managed, Led).</li>
+                <li>Add at least 5 relevant skills to be searchable in LinkedIn Recruiter.</li>
+            </ul>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="selection.html" class="btn-secondary">← Back to Services</a>
+            <a href="portfolio-steps.html" class="btn-primary">Next: Portfolio Creation →</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
